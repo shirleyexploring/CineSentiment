@@ -1,0 +1,160 @@
+/* Basic styling for the Movie Reviews Website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    background: #444;
+    padding: 10px 20px;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #444; /* For Firefox */
+}
+
+nav::-webkit-scrollbar {
+    height: 8px; /* Height of the horizontal scrollbar */
+}
+
+nav::-webkit-scrollbar-track {
+    background: #444; /* Background of the scrollbar track */
+}
+
+nav::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #444; /* Padding around the thumb */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    display: inline-block; /* Ensure links are inline */
+}
+
+nav a:hover {
+    background: #555;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    padding: 8px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #555;
+}
+
+
+/*footer*/
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+
+    margin-top: auto;
+}
+
+/* Grid layout for displaying movies */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.movie-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.movie-poster {
+    width: 100%; /* Ensures the image scales with the container */
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+/* review page */
+
+.review-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    background: #f9f9f9;
+    margin-top: 20px;
+}
+
+.movie-poster {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.review-content {
+    max-width: 600px;
+}
+
+.overview, .detailed-review {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.user-reviews {
+    width: 100%; /* Ensure the user reviews take up full width */
+}
+
+/* Additional styles for user reviews */
+.review-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-bottom: 10px; /* Space between review cards */
+}
+
+.mood { padding: .15rem .5rem; border-radius: .25rem; font-weight: 600; }
+.mood.positive { background:#d1fae5; color:#065f46; }  /* green */
+.mood.negative { background:#fee2e2; color:#991b1b; }  /* red   */

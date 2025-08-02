@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Reviews</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <form class="search-form" id="form" action="/search" method="GET">
+            <input type="text" id="query" placeholder="Search movies..." name="search">
+            <button type="submit">Search</button>
+        </form>
+
+        <a href="index.html?genre=28">Action</a>
+        <a href="index.html?genre=12">Adventure</a>
+        <a href="index.html?genre=16">Animation</a>
+        <a href="index.html?genre=35">Comedy</a>
+        <a href="index.html?genre=80">Crime</a>
+        <a href="index.html?genre=99">Documentary</a>
+        <a href="index.html?genre=18">Drama</a>
+        <a href="index.html?genre=10751">Family</a>
+        <a href="index.html?genre=14">Fantasy</a>
+        <a href="index.html?genre=36">History</a>
+        <a href="index.html?genre=27">Horror</a>
+        <a href="index.html?genre=10402">Music</a>
+        <a href="index.html?genre=9648">Mystery</a>
+        <a href="index.html?genre=10749">Romance</a>
+        <a href="index.html?genre=878">Science Fiction</a>
+        <a href="index.html?genre=10770">TV Movie</a>
+        <a href="index.html?genre=53">Thriller</a>
+        <a href="index.html?genre=10752">War</a>
+        <a href="index.html?genre=37">Western</a>
+    </nav>
+    
+    <main>
+        <div class="movie-grid" id="movieGrid"></div>
+    </main>
+
+    <footer>
+        <p>© 2024 Movie Reviews. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>    
+        
+</body>
+</html>
