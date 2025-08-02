@@ -3,12 +3,6 @@
 A lightweight full‑stack movie‑review website with **real‑time sentiment analysis**.  
 Search titles via The Movie Database (TMDb), post reviews, and instantly see whether the crowd feels 👍 positive, 😐 neutral, or 👎 negative about each film.
 
-<p align="center">
-  <img src="docs/hero.png" width="80%" alt="CineSentiment banner">
-</p>
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
 ---
 
 ## ✨ Features
@@ -101,7 +95,7 @@ Visit **http://localhost:8000/api/v1/reviews** to sanity‑check the API, then o
 
 ---
 
-## 🐳 One‑command Docker (optional)
+## 🐳 One‑command Docker
 
 ```yaml
 # docker-compose.yml
@@ -161,4 +155,4 @@ Released under the MIT License. See `LICENSE` for details.
 
 ---
 
-> **Need help?** Open an issue or ping me on X (@yourhandle). Pull requests are welcome!
+> **Need help?** Open an issue. Pull requests are welcome!
